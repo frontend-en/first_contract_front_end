@@ -6,7 +6,6 @@ import { fromNano } from "ton-core";
 import WebApp from "@twa-dev/sdk";
 
 
-
 function App() {
   const {
     contract_address,
@@ -33,8 +32,8 @@ function App() {
 
       <div>
         <div className='Card'>
-          <b>{WebApp.platform}</b>
-          <b>Our contract Address</b>
+        <b>{WebApp. platform}</b>
+        <b>Our contract Address</b>
           <div className='Hint'>{contract_address?.slice(0, 30) + "..."}</div>
           <b>Our contract Balance</b>
           {contract_balance && (
